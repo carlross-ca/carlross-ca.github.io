@@ -4,6 +4,7 @@ title = "Volatility Income Composite"
 theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = false
+buildFuture = true
 summaryLength = 30
 pagination.pagerSize = 20
 
@@ -33,9 +34,9 @@ A three-layer strategy harvesting equity and variance risk premium, managed from
 This site publishes monthly commentary only. The full performance record is available on request — see the [Contact](/contact/) page.
 """
 
-  [[params.socialIcons]]
-    name = "email"
-    url = "/contact/"
+[[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/carlross-ca/"
 
 [menu]
   [[menu.main]]
