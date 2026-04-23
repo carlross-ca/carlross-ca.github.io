@@ -1,0 +1,115 @@
+/* Volatility Income Composite — custom.css
+ * Minimal overrides on PaperMod. Typography-first, no chrome.
+ */
+
+:root {
+  --content-gap: 22px;
+  --main-width: 720px;
+  --header-height: 60px;
+  --footer-height: auto;
+  --radius: 4px;
+}
+
+/* Body copy — serif for long-form commentary, system sans for UI */
+.post-content,
+.post-content p,
+.post-content li {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.post-title,
+.page-header h1,
+.entry-header h2 {
+  font-family: Georgia, "Iowan Old Style", serif;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+/* Subtle link styling */
+.post-content a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.post-content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Headings inside posts */
+.post-content h2 {
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3em;
+}
+
+.post-content h3 {
+  margin-top: 1.6em;
+  font-size: 1.15rem;
+}
+
+/* Blockquote — used for standing disclaimers in posts if needed */
+.post-content blockquote {
+  border-left: 3px solid var(--secondary);
+  color: var(--secondary);
+  font-style: normal;
+  padding-left: 1em;
+  margin-left: 0;
+}
+
+/* Disclaimer footer — small, muted, always present */
+.site-disclaimer {
+  max-width: var(--main-width);
+  margin: 2.5em auto 1em auto;
+  padding: 1.2em 1.4em;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--secondary);
+}
+
+.site-disclaimer p {
+  margin: 0 0 0.6em 0;
+}
+
+.site-disclaimer strong {
+  color: var(--primary);
+}
+
+/* Post list — compact */
+.post-entry {
+  margin-bottom: 1.2em;
+  padding-bottom: 1.2em;
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+  background: transparent;
+}
+
+.post-entry:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Archive — tight spacing */
+.archive-entry {
+  margin: 0.4em 0;
+}
+
+/* Mobile tuning */
+@media (max-width: 640px) {
+  .post-content,
+  .post-content p,
+  .post-content li {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .site-disclaimer {
+    font-size: 0.75rem;
+    padding: 1em 1em;
+  }
+}

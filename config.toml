@@ -1,0 +1,79 @@
+baseURL = "https://carlross-ca.github.io/"
+languageCode = "en-ca"
+title = "Volatility Income Composite"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = false
+summaryLength = 30
+pagination.pagerSize = 20
+
+[params]
+  author = "Carl Ross"
+  description = "Monthly commentary on a three-layer equity and volatility risk-premium strategy, managed from Vernon, BC."
+  defaultTheme = "light"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = false
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  DisableScrollToTop = true
+  hideFooter = false
+  disableSpecial1stPost = true
+  assets.disableFingerprinting = false
+  assets.disableHLJS = true
+
+  [params.homeInfoParams]
+    Title = "Volatility Income Composite"
+    Content = """
+A three-layer strategy harvesting equity and variance risk premium, managed from Vernon, BC.
+
+This site publishes monthly commentary only. The full performance record is available on request — see the [Contact](/contact/) page.
+"""
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "/contact/"
+
+[menu]
+  [[menu.main]]
+    identifier = "commentary"
+    name = "Commentary"
+    url = "/commentary/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archive/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 40
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[markup.highlight]
+  noClasses = false
+  codeFences = false
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.youtube]
+    disable = true
